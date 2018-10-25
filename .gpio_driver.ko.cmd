@@ -1,0 +1,1 @@
+cmd_/home/gt/Desktop/gpio_driver/gpio_driver.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -T ./arch/arm/kernel/module.lds -o /home/gt/Desktop/gpio_driver/gpio_driver.ko /home/gt/Desktop/gpio_driver/gpio_driver.o /home/gt/Desktop/gpio_driver/gpio_driver.mod.o ;  true
