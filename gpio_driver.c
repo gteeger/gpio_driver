@@ -202,6 +202,7 @@ static irqreturn_t irq_handler(unsigned int irq, void *dev_id,
 			       struct pt_regs *regs)
 {
 
+	printk(KERN_INFO "Interrupt!\n");
     spin_lock(&gpio_lock);
     irq_data = HI;
     buffer[write_index] = irq_data;
@@ -226,3 +227,5 @@ static unsigned int gpio_poll(struct file *file, poll_table * wait)
 
 module_init(mod_init);
 module_exit(mod_exit);
+
+MODULE_LICENSE("GPL");
